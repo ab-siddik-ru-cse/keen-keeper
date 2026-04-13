@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Arif Rahman",
+        "picture": "https://i.pravatar.cc/150?u=arif",
+        "email": "arif.dev@gmail.com",
+        "days_since_contact": 32,
+        "status": "overdue",
+        "tags": [
+            "tech",
+            "university"
+        ],
+        "bio": "Former lab partner from CS department. Always discusses new JS frameworks.",
+        "goal": 30,
+        "next_due_date": "2026-04-10"
+    },
+    {
+        "id": 2,
+        "name": "Sarah Jenkins",
+        "picture": "https://i.pravatar.cc/150?u=sarah",
+        "email": "s.jenkins@outlook.com",
+        "days_since_contact": 2,
+        "status": "on-track",
+        "tags": [
+            "work",
+            "mentor"
+        ],
+        "bio": "Senior architect at my first job. Provides great career guidance.",
+        "goal": 14,
+        "next_due_date": "2026-04-25"
+    },
+    {
+        "id": 3,
+        "name": "Tanvir Ahmed",
+        "picture": "https://i.pravatar.cc/150?u=tanvir",
+        "email": "tanvir.pixel@yahoo.com",
+        "tags": [
+            "childhood",
+            "gaming"
+        ],
+        "days_since_contact": 6,
+        "status": "on-track",
+        "bio": "Grew up in the same neighborhood. We play Valorant on weekends.",
+        "goal": 7,
+        "next_due_date": "2026-04-14"
+    },
+    {
+        "id": 4,
+        "name": "Elena Rodriguez",
+        "picture": "https://i.pravatar.cc/150?u=elena",
+        "email": "elena.ro@design.co",
+        "days_since_contact": 13,
+        "status": "almost due",
+        "tags": [
+            "design",
+            "freelance"
+        ],
+        "bio": "Talented UI designer I collaborated with on Digi Tools.",
+        "goal": 15,
+        "next_due_date": "2026-04-15"
+    },
+    {
+        "id": 5,
+        "name": "Sajid Hasan",
+        "picture": "https://i.pravatar.cc/150?u=sajid",
+        "email": "sajid.h@blockchain.io",
+        "days_since_contact": 45,
+        "status": "overdue",
+        "tags": [
+            "blockchain",
+            "research"
+        ],
+        "bio": "Met at a Web3 seminar. Deeply knowledgeable about smart contracts.",
+        "goal": 30,
+        "next_due_date": "2026-03-30"
+    },
+    {
+        "id": 6,
+        "name": "Maria Chowdhury",
+        "picture": "https://i.pravatar.cc/150?u=maria",
+        "email": "m.chowdhury@edu.bd",
+        "days_since_contact": 5,
+        "status": "on-track",
+        "tags": [
+            "travel",
+            "close friend"
+        ],
+        "bio": "Adventurous soul who loves trekking in Sylhet. Very reliable.",
+        "goal": 21,
+        "next_due_date": "2026-04-29"
+    },
+    {
+        "id": 7,
+        "name": "James Wilson",
+        "picture": "https://i.pravatar.cc/150?u=james",
+        "email": "j.wilson@fitness.com",
+        "days_since_contact": 8,
+        "status": "almost due",
+        "tags": [
+            "gym",
+            "health"
+        ],
+        "bio": "My accountability partner for morning workouts.",
+        "goal": 10,
+        "next_due_date": "2026-04-15"
+    },
+    {
+        "id": 8,
+        "name": "Nusrat Jahan",
+        "picture": "https://i.pravatar.cc/150?u=nusrat",
+        "email": "nusrat.j@creative.com",
+        "days_since_contact": 20,
+        "status": "overdue",
+        "tags": [
+            "content",
+            "marketing"
+        ],
+        "bio": "Expert in SEO and content strategy. We exchange growth hacks.",
+        "goal": 14,
+        "next_due_date": "2026-04-07"
+    },
+    {
+        "id": 9,
+        "name": "Liam O'Connor",
+        "picture": "https://i.pravatar.cc/150?u=liam",
+        "email": "liam.oc@open-source.org",
+        "days_since_contact": 60,
+        "status": "overdue",
+        "tags": [
+            "open-source",
+            "remote"
+        ],
+        "bio": "Maintainer of a popular React library. Met during a hackathon.",
+        "goal": 45,
+        "next_due_date": "2026-03-28"
+    },
+    {
+        "id": 10,
+        "name": "Tahmid Ishtiak",
+        "picture": "https://i.pravatar.cc/150?u=tahmid",
+        "email": "tahmid@startup.com",
+        "days_since_contact": 3,
+        "status": "on-track",
+        "tags": [
+            "entrepreneur",
+            "neighbor"
+        ],
+        "bio": "Running a local logistics startup. Great for brainstorming business ideas.",
+        "goal": 14,
+        "next_due_date": "2026-04-24"
+    },
+    {
+        "id": 11,
+        "name": "Chloe Sim",
+        "picture": "https://i.pravatar.cc/150?u=chloe",
+        "email": "chloe.sim@finance.sg",
+        "days_since_contact": 27,
+        "status": "almost due",
+        "tags": [
+            "finance",
+            "university"
+        ],
+        "bio": "Old friend from exchange program. Works in fintech now.",
+        "goal": 30,
+        "next_due_date": "2026-04-16"
+    },
+    {
+        "id": 12,
+        "name": "Fahim Shahriar",
+        "picture": "https://i.pravatar.cc/150?u=fahim",
+        "email": "fahim.sh@photography.me",
+        "days_since_contact": 1,
+        "status": "on-track",
+        "tags": [
+            "photography",
+            "hobby"
+        ],
+        "bio": "Street photographer. We often go on photo walks together.",
+        "goal": 7,
+        "next_due_date": "2026-04-19"
+    }
+]
