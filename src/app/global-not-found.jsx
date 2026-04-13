@@ -16,7 +16,7 @@ export default function GlobalNotFound() {
             <body>
                 <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4 text-center">
                     {/* 404 Header Text */}
-                    <h1 className="text-9xl font-extrabold text-lime-600 tracking-widest">
+                    <h1 className="text-9xl font-extrabold text-[#244D3F] tracking-widest">
                         404
                     </h1>
 
@@ -25,15 +25,15 @@ export default function GlobalNotFound() {
                         <Image
                             src="/assets/not-found.gif" // Apnar GIF file er path ekhane diben
                             alt="Page Not Found Animation"
-                            fill
                             className="object-contain"
+                            fill
                             priority
                         />
                     </div>
 
                     {/* Message Section */}
                     <div className="space-y-4">
-                        <h2 className="text-3xl md:text-5xl font-bold text-lime-600">
+                        <h2 className="text-3xl md:text-5xl font-bold text-[#244D3F]">
                             Look Like you're lost
                         </h2>
                         <p className="text-gray-500 text-lg md:text-xl">
@@ -43,12 +43,12 @@ export default function GlobalNotFound() {
 
                     {/* Go To Home Button */}
                     <div className="mt-10">
-                        <Link
-                            href="http://localhost:3000/"
-                            className="btn bg-lime-600 hover:bg-lime-900 text-white border-none px-10 py-3 rounded-md text-lg transition-all duration-300"
+                        <a
+                            href="/"
+                            className="btn bg-[#244D3F]  hover:bg-lime-900 text-white border-none px-10 py-3 rounded-md text-lg transition-all duration-300"
                         >
                             Go To Home
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </body>
