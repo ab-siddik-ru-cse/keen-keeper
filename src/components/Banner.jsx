@@ -36,7 +36,7 @@ const Banner = () => {
         {stats.map((item, index) => (
           <div 
             key={index} 
-            className="bg-white border border-gray-100 rounded-xl p-8 shadow-sm flex flex-col items-center justify-center text-center transition-transform hover:scale-[1.02]"
+            className="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex flex-col items-center justify-center text-center transition-transform hover:scale-[1.02]"
           >
             <span className="text-4xl font-bold text-slate-800 mb-2">
               {item.value}
@@ -49,7 +49,7 @@ const Banner = () => {
       </div>
       
       {/* Divider line as seen in Figma bottom */}
-      <div className="max-w-6xl mx-auto border-b border-gray-100 mt-16"></div>
+      <div className="max-w-6xl mx-auto border-b border-gray-200 mt-16"></div>
     </section>
   );
 };

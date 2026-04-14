@@ -15,12 +15,11 @@ const NavBar = () => {
     ];
 
     return (
-        <div className="navbar bg-base-100 px-4 md:px-8 border-b border-gray-100">
+        <div className="navbar bg-base-100 px-4 md:px-8 border-b border-gray-200">
             {/* Logo */}
             <Link href={'/'} className="navbar-start">
                 <div className="flex items-center gap-1 cursor-pointer">
-                    <span className="text-xl font-extrabold text-slate-800">Keen</span>
-                    <span className="text-xl font-extrabold text-emerald-800">Keeper</span>
+                    <img src="/assets/logo.png" alt="" />
                 </div>
             </Link>
 
@@ -36,7 +35,7 @@ const NavBar = () => {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all font-medium ${isActive
+                                className={`flex items-center gap-2 px-4 py-2 rounded-sm transition-all font-medium ${isActive
                                     ? 'bg-emerald-900 text-white shadow-md'
                                     : 'text-slate-500 hover:bg-gray-100'
                                     }`}

@@ -18,7 +18,7 @@ const FriendCard = ({ friend }) => {
 
     return (
         <Link href={`/friendsdetails/${friend.id}`}>
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-50 flex flex-col items-center text-center hover:shadow-md transition-shadow cursor-pointer h-full">
+            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-50 flex flex-col items-center text-center hover:translate-y-[-2px] hover:shadow-md transition-all cursor-pointer h-full">
                 {/* Profile Picture */}
                 <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-gray-100">
                     <img
