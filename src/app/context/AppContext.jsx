@@ -6,7 +6,14 @@ export const AppContext = createContext();
 
 // provider
 export const AppProvider = ({ children }) => {
+
     const [friends, setFriends] = useState([]);
+
+    // State to manage the timeline entries locally
+    const [interactions, setInteractions] = useState([
+        { id: 1, type: 'Text', title: 'Asked for career advice', date: 'Jan 28, 2026' },
+        { id: 2, type: 'Meetup', title: 'Industry conference meetup', date: 'Jan 28, 2026' },
+    ]);
 
     useEffect(() => {
         const loadData = async () => {
@@ -19,7 +26,7 @@ export const AppProvider = ({ children }) => {
 
 
     return (
-        <AppContext.Provider value={{friends}}>
+        <AppContext.Provider value={{ friends, interactions, setInteractions }}>
             {children}
         </AppContext.Provider>
     );

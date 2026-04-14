@@ -1,8 +1,12 @@
 "use client";
-import React from 'react';
+import React, { useContext } from 'react';
 import { HiOutlinePhone, HiOutlineVideoCamera, HiOutlineChatAlt2, HiOutlineUsers } from "react-icons/hi";
+import { AppContext } from '../context/AppContext';
 
 const Timeline = () => {
+    const { interactions } = useContext(AppContext);
+    console.log(interactions);
+
     // 1. Dummy Data Array
     const timelineData = [
         { id: 1, type: "Meetup", person: "Tom Baker", date: "March 29, 2026", icon: <HiOutlineUsers />, color: "bg-orange-100 text-orange-600" },
@@ -29,7 +33,7 @@ const Timeline = () => {
 
             {/* Timeline List Mapping */}
             <div className="space-y-4">
-                {timelineData.map((item) => (
+                {interactions.map((item) => (
                     <div
                         key={item.id}
                         className="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-default"
@@ -42,7 +46,7 @@ const Timeline = () => {
                         {/* Text Content */}
                         <div>
                             <p className="text-lg font-medium text-gray-800">
-                                <span className="font-bold">{item.type}</span> with {item.person}
+                                <span className="font-bold">{item.title}</span>
                             </p>
                             <p className="text-sm text-gray-500 font-semibold">{item.date}</p>
                         </div>

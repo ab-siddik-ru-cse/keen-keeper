@@ -1,33 +1,33 @@
 "use client";
-import React, { useState } from 'react';
+import React, { use, useContext, useState } from 'react';
 import {
     Phone, MessageSquare, Video, Clock,
     Archive, Trash2, Edit3, History
 } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
+import { AppContext } from '@/app/context/AppContext';
 
-const FriendDetails = () => {
-    // State to manage the timeline entries locally
-    const [interactions, setInteractions] = useState([
-        { id: 1, type: 'Text', title: 'Asked for career advice', date: 'Jan 28, 2026' },
-        { id: 2, type: 'Meetup', title: 'Industry conference meetup', date: 'Jan 28, 2026' },
-    ]);
-
-    const friend = {
-        "id": 1,
-        "name": "Arif Rahman",
-        "picture": "https://i.pravatar.cc/150?u=arif",
-        "email": "arif.dev@gmail.com",
-        "days_since_contact": 32,
-        "status": "overdue",
-        "tags": [
-            "tech",
-            "university"
-        ],
-        "bio": "Former lab partner from CS department. Always discusses new JS frameworks.",
-        "goal": 30,
-        "next_due_date": "2026-04-10"
+const FriendDetails = ({ params }) => {
+    const { friends, interactions, setInteractions } = useContext(AppContext);
+    const p = use(params);
+    if (!friends) {
+        return (
+            <div className="flex justify-center items-center h-screen">
+                <p>Friend Loading....</p>
+            </div>
+        );
     }
+
+    const friend = friends.find(f => f.id === parseInt(p.id));
+
+    if (!friend) {
+        return (
+            <div className="flex justify-center items-center h-screen">
+                <p>Friend data not found. Please go back to home or wait...</p>
+            </div>
+        );
+    }
+
     const handleCheckIn = (type) => {
         const newEntry = {
             id: Date.now(),
