@@ -32,7 +32,7 @@
     {
         "id": 3,
         "name": "Tanvir Ahmed",
-        "picture": "https://i.pravatar.cc/150?u=tanvir",
+        "picture": "https://i.pravatar.cc/150?u=elena",
         "email": "tanvir.pixel@yahoo.com",
         "tags": [
             "childhood",
@@ -47,7 +47,7 @@
     {
         "id": 4,
         "name": "Elena Rodriguez",
-        "picture": "https://i.pravatar.cc/150?u=elena",
+        "picture": "https://i.pravatar.cc/150?u=tanvir",
         "email": "elena.ro@design.co",
         "days_since_contact": 13,
         "status": "almost due",
@@ -62,7 +62,7 @@
     {
         "id": 5,
         "name": "Sajid Hasan",
-        "picture": "https://i.pravatar.cc/150?u=sajid",
+        "picture": "https://i.pravatar.cc/150?u=maria",
         "email": "sajid.h@blockchain.io",
         "days_since_contact": 45,
         "status": "overdue",
@@ -77,7 +77,7 @@
     {
         "id": 6,
         "name": "Maria Chowdhury",
-        "picture": "https://i.pravatar.cc/150?u=maria",
+        "picture": "https://i.pravatar.cc/150?u=sajid",
         "email": "m.chowdhury@edu.bd",
         "days_since_contact": 5,
         "status": "on-track",
@@ -152,7 +152,7 @@
     {
         "id": 11,
         "name": "Chloe Sim",
-        "picture": "https://i.pravatar.cc/150?u=chloe",
+        "picture": "https://i.pravatar.cc/150?u=fahim",
         "email": "chloe.sim@finance.sg",
         "days_since_contact": 27,
         "status": "almost due",
@@ -167,7 +167,7 @@
     {
         "id": 12,
         "name": "Fahim Shahriar",
-        "picture": "https://i.pravatar.cc/150?u=fahim",
+        "picture": "https://i.pravatar.cc/150?u=ab",
         "email": "fahim.sh@photography.me",
         "days_since_contact": 1,
         "status": "on-track",

@@ -1,7 +1,10 @@
-import React from 'react';
+"use client"
+import React, { useContext } from 'react';
 import FriendCard from './FriendCard';
+import { AppContext } from '@/app/context/AppContext';
 
-const FriendsList = ({ friends }) => {
+const FriendsList = () => {
+    const { friends } = useContext(AppContext);
 
     return (
         <section className="max-w-7xl mx-auto px-4 py-12">

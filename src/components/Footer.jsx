@@ -1,5 +1,5 @@
 import React from 'react';
-import { Plus } from 'lucide-react';
+import Link from 'next/link';
 
 
 const Footer = () => {
@@ -25,17 +25,17 @@ const Footer = () => {
                     </span>
                     <div className="flex gap-4">
                         {[
-                            { icon: <Plus size={20} />, href: "#" },
-                            { icon: <Plus size={20} />, href: "#" },
-                            { icon: <Plus size={20} />, href: "#" },
+                            { icon: <img src='/assets/facebook.png' />, href: "/" },
+                            { icon: <img src='/assets/instagram.png' />, href: "/" },
+                            { icon: <img src='/assets/twitter.png' />, href: "/" },
                         ].map((social, idx) => (
-                            <a
+                            <Link
                                 key={idx}
                                 href={social.href}
-                                className="p-3 bg-white text-[#1a4332] rounded-full hover:bg-emerald-50 transition-colors"
+                                className="hover:translate-y-0.5"
                             >
                                 {social.icon}
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 </div>
