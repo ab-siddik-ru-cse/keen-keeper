@@ -35,9 +35,10 @@ const FriendDetails = ({ params }) => {
         Video: <Video size={16} />,
     };
 
-    const handleCheckIn = (type) => {
+    const handleCheckIn = (type, name) => {
         const newEntry = {
             id: Date.now(),
+            person: friend.name,
             type: type,
             title: `${type} with ${friend.name}`,
             date: new Date().toLocaleDateString('en-US', {

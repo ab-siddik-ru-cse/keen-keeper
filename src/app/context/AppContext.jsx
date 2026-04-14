@@ -11,9 +11,10 @@ export const AppProvider = ({ children }) => {
 
     // State to manage the timeline entries locally
     const [interactions, setInteractions] = useState([
-        { id: 1, type: 'Text', title: 'Asked for career advice', date: 'Jan 28, 2026' },
-        { id: 2, type: 'Meetup', title: 'Industry conference meetup', date: 'Jan 28, 2026' },
+        { id: 1, type: 'Text', person: 'Arif Rahman', title: 'Asked for career advice', date: 'Jan 28, 2026' },
+        { id: 2, type: 'Meetup', person: 'Arif Rahman', title: 'Industry conference meetup', date: 'Jan 28, 2026' },
     ]);
+    console.log(interactions);
 
     useEffect(() => {
         const loadData = async () => {
