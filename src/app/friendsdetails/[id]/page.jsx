@@ -28,6 +28,12 @@ const FriendDetails = ({ params }) => {
         );
     }
 
+    const icons = {
+        Call: <Phone size={16} />,
+        Text: <MessageSquare size={16} />,
+        Video: <Video size={16} />,
+    };
+
     const handleCheckIn = (type) => {
         const newEntry = {
             id: Date.now(),
@@ -40,6 +46,7 @@ const FriendDetails = ({ params }) => {
 
         setInteractions([newEntry, ...interactions]);
         toast.success(`${type} entry added!`, {
+            icon: icons[type],
             style: { background: '#1a4332', color: '#fff' },
         });
     };

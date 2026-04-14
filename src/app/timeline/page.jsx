@@ -1,21 +1,24 @@
 "use client";
 import React, { useContext } from 'react';
-import { HiOutlinePhone, HiOutlineVideoCamera, HiOutlineChatAlt2, HiOutlineUsers } from "react-icons/hi";
+import {
+    Phone, MessageSquare, Video, Clock,
+    Archive, Trash2, Edit3, History
+} from 'lucide-react';
 import { AppContext } from '../context/AppContext';
 
 const Timeline = () => {
     const { interactions } = useContext(AppContext);
     console.log(interactions);
 
-    // 1. Dummy Data Array
-    const timelineData = [
-        { id: 1, type: "Meetup", person: "Tom Baker", date: "March 29, 2026", icon: <HiOutlineUsers />, color: "bg-orange-100 text-orange-600" },
-        { id: 2, type: "Text", person: "Sarah Chen", date: "March 28, 2026", icon: <HiOutlineChatAlt2 />, color: "bg-gray-100 text-gray-600" },
-        { id: 3, type: "Meetup", person: "Olivia Martinez", date: "March 26, 2026", icon: <HiOutlineUsers />, color: "bg-orange-100 text-orange-600" },
-        { id: 4, type: "Video", person: "Aisha Patel", date: "March 23, 2026", icon: <HiOutlineVideoCamera />, color: "bg-blue-100 text-blue-600" },
-        { id: 5, type: "Meetup", person: "Sarah Chen", date: "March 21, 2026", icon: <HiOutlineUsers />, color: "bg-orange-100 text-orange-600" },
-        { id: 6, type: "Call", person: "Marcus Johnson", date: "March 19, 2026", icon: <HiOutlinePhone />, color: "bg-green-100 text-green-600" },
-    ];
+    const getIcon = (type) => {
+        switch (type) {
+            case 'Call': return <Phone size={18} />;
+            case 'Text': return <MessageSquare size={18} />;
+            case 'Video': return <Video size={18} />;
+            default: return <History size={18} />;
+        }
+    };
+
 
     return (
         <div className="max-w-4xl mx-auto p-6 bg-[#f8fafc] min-h-screen">
@@ -40,7 +43,7 @@ const Timeline = () => {
                     >
                         {/* Icon Section */}
                         <div className={`p-3 rounded-lg text-2xl ${item.color}`}>
-                            {item.icon}
+                            {getIcon(item.type)}
                         </div>
 
                         {/* Text Content */}
