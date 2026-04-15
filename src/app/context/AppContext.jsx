@@ -8,6 +8,7 @@ export const AppContext = createContext();
 export const AppProvider = ({ children }) => {
 
     const [friends, setFriends] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     // State to manage the timeline entries locally
     const [interactions, setInteractions] = useState([
@@ -17,16 +18,18 @@ export const AppProvider = ({ children }) => {
 
     useEffect(() => {
         const loadData = async () => {
+            setIsLoading(true);
             const res = await fetch("/data/friendsData.json");
             const data = await res.json();
             setFriends(data);
+            setIsLoading(false);
         };
         loadData();
     }, []);
 
 
     return (
-        <AppContext.Provider value={{ friends, interactions, setInteractions }}>
+        <AppContext.Provider value={{ friends, interactions, setInteractions, isLoading }}>
             {children}
         </AppContext.Provider>
     );

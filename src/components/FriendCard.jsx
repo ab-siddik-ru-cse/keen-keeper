@@ -15,14 +15,6 @@ const FriendCard = ({ friend }) => {
                 return 'bg-gray-100 text-gray-600';
         }
     };
-    if (!friend) {
-        return (
-            <div className="flex justify-center items-center h-screen">
-                <p>Friend data not found. Please go back to home or wait...</p>
-            </div>
-        );
-    }
-
     return (
         <Link href={`/friendsdetails/${friend.id}`}>
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-50 flex flex-col items-center text-center hover:translate-y-[-2px] hover:shadow-md transition-all cursor-pointer h-full">
