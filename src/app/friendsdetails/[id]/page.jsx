@@ -52,6 +52,7 @@ const FriendDetails = ({ params }) => {
             style: { background: '#1a4332', color: '#fff' },
         });
     };
+    const firstThree = interactions.slice(0,3);
 
     return (
         <div className='bg-[#F8FAFC]'>
@@ -143,7 +144,7 @@ const FriendDetails = ({ params }) => {
                                 </Link>
                             </div>
                             <div className="divide-y divide-gray-200">
-                                {interactions.map((item) => (
+                                {firstThree.map((item) => (
                                     <div key={item.id} className="p-6 flex justify-between items-center">
                                         <div className="flex gap-4 items-center">
                                             <div className="p-2 bg-slate-50 rounded-lg text-slate-600">

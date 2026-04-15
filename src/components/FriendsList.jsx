@@ -5,15 +5,6 @@ import { AppContext } from '@/app/context/AppContext';
 
 const FriendsList = () => {
     const { friends } = useContext(AppContext);
-
-    if (!friends) {
-        return (
-            <div className="flex justify-center items-center h-screen">
-                <p>Friend data not found. Please go back to home or wait...</p>
-            </div>
-        );
-    }
-
     return (
         <section className='bg-[#F8FAFC]'>
             <div className="max-w-7xl mx-auto px-4 py-12">

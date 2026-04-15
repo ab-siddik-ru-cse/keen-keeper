@@ -12,8 +12,8 @@ const FriendshipAnalytics = () => {
     }
 
     const data = [
-        { name: 'Call', value: valueCount('Call'), color: '#2D4F3C' },
-        { name: 'Text', value: valueCount('Text'), color: '#8B31FF' },
+        { name: 'Call', value: valueCount('Call'), color: '#2D4F3C' },  
+        { name: 'Text', value: valueCount('Text'), color: '#8B31FF' },  
         { name: 'Video', value: valueCount('Video'), color: '#3BA755' },
     ];
 

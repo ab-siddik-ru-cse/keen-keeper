@@ -15,6 +15,13 @@ const FriendCard = ({ friend }) => {
                 return 'bg-gray-100 text-gray-600';
         }
     };
+    if (!friend) {
+        return (
+            <div className="flex justify-center items-center h-screen">
+                <p>Friend data not found. Please go back to home or wait...</p>
+            </div>
+        );
+    }
 
     return (
         <Link href={`/friendsdetails/${friend.id}`}>
