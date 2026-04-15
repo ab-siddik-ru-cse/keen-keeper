@@ -5,7 +5,7 @@ import { AppContext } from '@/app/context/AppContext';
 import Loading from './Loading';
 
 const FriendsList = () => {
-    const { friends , isLoading } = useContext(AppContext);
+    const { friends, isLoading } = useContext(AppContext);
     return (
         <section className='bg-[#F8FAFC]'>
             <div className="max-w-7xl mx-auto px-4 py-12">
