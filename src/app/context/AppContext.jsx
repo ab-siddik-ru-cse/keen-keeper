@@ -14,7 +14,6 @@ export const AppProvider = ({ children }) => {
         { id: 1, type: 'Text', person: 'Arif Rahman', title: 'Asked for career advice', date: 'Jan 28, 2026' },
         { id: 2, type: 'Meetup', person: 'Arif Rahman', title: 'Industry conference meetup', date: 'Jan 28, 2026' },
     ]);
-    console.log(interactions);
 
     useEffect(() => {
         const loadData = async () => {

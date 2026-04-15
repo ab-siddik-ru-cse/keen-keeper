@@ -4,12 +4,16 @@ import { Plus } from 'lucide-react';
 import { AppContext } from '@/app/context/AppContext';
 
 const Banner = () => {
-  const {friends} = useContext(AppContext);
+  const { friends, interactions } = useContext(AppContext);
+  const valueCount = (status) => {
+    const statusValue = friends.filter(f => f.status === status);
+    return statusValue.length;
+  }
   const stats = [
     { label: 'Total Friends', value: friends.length },
-    { label: 'On Track', value: 5 },
-    { label: 'Need Attention', value: 4 },
-    { label: 'Interactions This Month', value: 68 },
+    { label: 'On Track', value: valueCount('on-track') },
+    { label: 'Need Attention', value: valueCount('overdue') },
+    { label: 'Interactions This Month', value: interactions.length },
   ];
 
   return (
@@ -20,7 +24,7 @@ const Banner = () => {
           Friends to keep close in your life
         </h1>
         <p className="text-[#64748B] text-sm md:text-base leading-relaxed max-w-xl mx-auto">
-          Your personal shelf of meaningful connections. Browse, tend, and nurture the 
+          Your personal shelf of meaningful connections. Browse, tend, and nurture the
           relationships that matter most.
         </p>
 
@@ -34,8 +38,8 @@ const Banner = () => {
       {/* 3. Summary Cards Grid */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-6">
         {stats.map((item, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex flex-col items-center justify-center text-center transition-transform hover:scale-[1.02]"
           >
             <span className="text-4xl font-bold text-slate-800 mb-2">
@@ -47,7 +51,7 @@ const Banner = () => {
           </div>
         ))}
       </div>
-      
+
       {/* Divider line as seen in Figma bottom */}
       <div className="max-w-6xl mx-auto border-b border-gray-200 mt-16"></div>
     </section>

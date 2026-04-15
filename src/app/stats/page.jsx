@@ -1,13 +1,20 @@
 "use client";
-import React from 'react';
+import React, { useContext } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
+import { AppContext } from '../context/AppContext';
 
 const FriendshipAnalytics = () => {
-    // 1. Dummy Data based on Interaction Types
+
+    const { interactions } = useContext(AppContext);
+    const valueCount = (type) => {
+        const typeValue = interactions.filter(i => i.type === type);
+        return typeValue.length;
+    }
+
     const data = [
-        { name: 'Call', value: 45, color: '#2D4F3C' },  // Dark Green
-        { name: 'Text', value: 30, color: '#8B31FF' },  // Purple
-        { name: 'Video', value: 25, color: '#3BA755' }, // Bright Green
+        { name: 'Call', value: valueCount('Call'), color: '#2D4F3C' },
+        { name: 'Text', value: valueCount('Text'), color: '#8B31FF' },
+        { name: 'Video', value: valueCount('Video'), color: '#3BA755' },
     ];
 
     return (
@@ -26,9 +33,9 @@ const FriendshipAnalytics = () => {
                                     data={data}
                                     cx="50%"
                                     cy="50%"
-                                    innerRadius={75}  
+                                    innerRadius={75}
                                     outerRadius={100}
-                                    paddingAngle={5}  
+                                    paddingAngle={5}
                                     dataKey="value"
                                 >
                                     {data.map((entry, index) => (
