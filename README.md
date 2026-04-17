@@ -8,14 +8,14 @@
 
 ### **Home**
 <p align="center">
-  <img src="https://github.com/ab-siddik-ru-cse/keen-keeper/blob/main/public/assets/screenshots/Home.png" alt="Home Dashboard" width="100%" />
+  <img src="https://github.com/ab-siddik-ru-cse/keen-keeper/blob/main/public/assets/screenshots/Home.png" alt="Home Dashboard"/>
 </p>
   
 ---
 
 ### **FrindDetails**
 <p align="center">
-  <img src="https://github.com/ab-siddik-ru-cse/keen-keeper/blob/main/public/assets/screenshots/FrindsDetails.png" alt="Friend Details" width="100%" />
+  <img src="https://github.com/ab-siddik-ru-cse/keen-keeper/blob/main/public/assets/screenshots/FrindsDetails.png" alt="Friend Details"/>
 </p>
   
 ---
@@ -24,14 +24,14 @@
 ### **Timeline**
 
 <p align="center">
-  <img src="https://github.com/ab-siddik-ru-cse/keen-keeper/blob/main/public/assets/screenshots/Timeline.png" alt="Interaction Timeline" width="100%" />
+  <img src="https://github.com/ab-siddik-ru-cse/keen-keeper/blob/main/public/assets/screenshots/Timeline.png" alt="Interaction Timeline"/>
 </p>
 
   ---
 
 ### **Stats**
 <p align="center">
-  <img src="https://github.com/ab-siddik-ru-cse/keen-keeper/blob/main/public/assets/screenshots/Stats.png" alt="Friendship Analytics" width="100%" />
+  <img src="https://github.com/ab-siddik-ru-cse/keen-keeper/blob/main/public/assets/screenshots/Stats.png" alt="Friendship Analytics" />
 </p>
 
 ---
