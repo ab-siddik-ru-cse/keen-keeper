@@ -56,7 +56,7 @@ const FriendDetails = ({ params }) => {
 
     return (
         <div className='bg-[#F8FAFC]'>
-            <div className="max-w-6xl mx-auto px-4 py-10">
+            <div className="max-w-7xl mx-auto px-4 py-10">
                 <Toaster position="top-right" />
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
