@@ -51,7 +51,7 @@ const Banner = () => {
         ))}
       </div>
 
-      <div className="max-w-6xl mx-auto border-b border-gray-200 mt-16"></div>
+      <div className="max-w-7xl mx-auto border-b border-gray-200 mt-16"></div>
     </section>
   );
 };
