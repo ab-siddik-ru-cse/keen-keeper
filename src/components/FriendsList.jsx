@@ -8,7 +8,7 @@ const FriendsList = () => {
     const { friends, isLoading } = useContext(AppContext);
     return (
         <section className='bg-[#F8FAFC]'>
-            <div className="max-w-7xl mx-auto py-12">
+            <div className="max-w-7xl px-4 mx-auto py-12">
                 <h2 className="text-2xl font-bold text-slate-800 mb-8">Your Friends</h2>
 
                 {/* Responsive tailwind css style */}

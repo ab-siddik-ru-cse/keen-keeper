@@ -42,7 +42,7 @@ const Timeline = () => {
 
     return (
         <div className='bg-[#f8fafc]'>
-            <div className="max-w-7xl mx-auto p-6 min-h-screen">
+            <div className="max-w-7xl mx-auto py-6 px-4 min-h-screen">
                 <h1 className="text-3xl font-bold text-[#1e293b] mb-6">Timeline</h1>
 
                 {/* Upper Section */}

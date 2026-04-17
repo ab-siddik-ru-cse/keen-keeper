@@ -35,7 +35,7 @@ const Banner = () => {
       </div>
 
       {/* 3. Summary Cards Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-6">
+      <div className="max-w-7xl px-4 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-6">
         {stats.map((item, index) => (
           <div
             key={index}
@@ -51,7 +51,7 @@ const Banner = () => {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto border-b border-gray-200 mt-16"></div>
+      <div className="max-w-7xl px-4 mx-auto border-b border-gray-200 mt-16"></div>
     </section>
   );
 };

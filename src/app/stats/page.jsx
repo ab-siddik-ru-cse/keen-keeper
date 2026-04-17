@@ -19,7 +19,7 @@ const FriendshipAnalytics = () => {
 
     return (
         <div className='bg-[#f8fafc]'>
-            <div className="max-w-7xl mx-auto p-6 my-10">
+            <div className="max-w-7xl mx-auto py-6 px-4 my-10">
                 <h1 className="text-3xl font-bold text-[#1e293b] mb-6">Friendship Analytics</h1>
 
                 {/* Chart Container Card */}
