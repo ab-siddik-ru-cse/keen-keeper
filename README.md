@@ -7,13 +7,13 @@
 ## 📸 Project Showcase
 
 ### Desktop View Mockup
-![Desktop Mockup]('./assets/logo.png') 
+![Desktop Mockup](https://github.com/ab-siddik-ru-cse/keen-keeper/blob/main/public/assets/screenshots/Home.png) 
 *Replace this link with your actual screenshot or a mockup image*
 
 ### 📱 Responsive Design
 | Home Page | Friend Details |
 |---|---|
-| ![Mobile Home](https://your-image-link-here.com/home-mobile.png) | ![Mobile Details](https://your-image-link-here.com/details-mobile.png) |
+| ![Mobile Home](https://github.com/ab-siddik-ru-cse/keen-keeper/blob/main/public/assets/screenshots/Timeline.png) | ![Mobile Details](https://github.com/ab-siddik-ru-cse/keen-keeper/blob/main/public/assets/screenshots/FrindsDetails.png) |
 
 ---
 
