@@ -28,7 +28,6 @@ const Banner = () => {
           relationships that matter most.
         </p>
 
-        {/* 2. Add Friend Button */}
         <button className="btn bg-[#244D3F] hover:bg-emerald-950 text-white border-none mt-8 px-8 gap-2 normal-case rounded-md">
           <Plus size={18} />
           Add a Friend
@@ -52,7 +51,6 @@ const Banner = () => {
         ))}
       </div>
 
-      {/* Divider line as seen in Figma bottom */}
       <div className="max-w-6xl mx-auto border-b border-gray-200 mt-16"></div>
     </section>
   );

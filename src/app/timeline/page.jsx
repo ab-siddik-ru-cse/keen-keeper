@@ -23,18 +23,18 @@ const Timeline = () => {
 
     const processedInteractions = interactions
         .filter((item) => {
-            // Search by Name or Type
+            // Search 
             const matchesSearch =
                 item.person.toLowerCase().includes(searchTerm.toLowerCase()) ||
                 item.type.toLowerCase().includes(searchTerm.toLowerCase());
 
-            // Filter by Type
+            // Filter 
             const matchesFilter = filterType === "All" || item.type === filterType;
 
             return matchesSearch && matchesFilter;
         })
         .sort((a, b) => {
-            // Sort by Date
+            // Sort 
             const dateA = new Date(a.date);
             const dateB = new Date(b.date);
             return sortOrder === "newest" ? dateB - dateA : dateA - dateB;
@@ -45,7 +45,7 @@ const Timeline = () => {
             <div className="max-w-7xl mx-auto p-6 min-h-screen">
                 <h1 className="text-3xl font-bold text-[#1e293b] mb-6">Timeline</h1>
 
-                {/* Controls Section */}
+                {/* Upper Section */}
                 <div className="mb-8 flex flex-wrap gap-4 items-center">
 
                     <div className="relative w-full max-w-xs">

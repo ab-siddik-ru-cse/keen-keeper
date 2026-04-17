@@ -35,7 +35,7 @@ const FriendDetails = ({ params }) => {
         Video: <Video size={16} />,
     };
 
-    const handleCheckIn = (type, name) => {
+    const handleCheckIn = (type) => {
         const newEntry = {
             id: Date.now(),
             person: friend.name,
@@ -52,7 +52,7 @@ const FriendDetails = ({ params }) => {
             style: { background: '#1a4332', color: '#fff' },
         });
     };
-    const firstThree = interactions.slice(0,3);
+    const firstThree = interactions.slice(0, 3);
 
     return (
         <div className='bg-[#F8FAFC]'>
@@ -61,7 +61,7 @@ const FriendDetails = ({ params }) => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
-                    {/* --- LEFT COLUMN (4 Cols) --- */}
+                    {/*Left section*/}
                     <div className="lg:col-span-4 space-y-6">
                         <div className="bg-white rounded-lg p-8 shadow-sm text-center">
                             <img
@@ -91,10 +91,10 @@ const FriendDetails = ({ params }) => {
                         </div>
                     </div>
 
-                    {/* --- RIGHT COLUMN (8 Cols) --- */}
+                    {/* Right section*/}
                     <div className="lg:col-span-8 space-y-6">
 
-                        {/* 1. Stats Cards */}
+                        {/* Stats Cards */}
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             {[
                                 { label: 'Days Since Contact', val: friend.days_since_contact },
@@ -108,7 +108,7 @@ const FriendDetails = ({ params }) => {
                             ))}
                         </div>
 
-                        {/* 2. Relationship Goal Card */}
+                        {/* Relationship Goal Card */}
                         <div className="bg-white p-6 rounded-sm  shadow-sm flex justify-between items-center">
                             <div>
                                 <h3 className="text-emerald-900 font-bold">Relationship Goal</h3>
@@ -119,7 +119,7 @@ const FriendDetails = ({ params }) => {
                             </button>
                         </div>
 
-                        {/* 3. Quick Check-In */}
+                        {/* Quick Check-In */}
                         <div className="bg-white p-6 rounded-sm shadow-sm">
                             <h3 className="text-emerald-900 font-bold mb-4">Quick Check-In</h3>
                             <div className="grid grid-cols-3 gap-4">
@@ -135,7 +135,7 @@ const FriendDetails = ({ params }) => {
                             </div>
                         </div>
 
-                        {/* 4. Recent Interactions (Timeline) */}
+                        {/* Recent Interactions (Timeline) */}
                         <div className="bg-white rounded-md  shadow-sm overflow-hidden">
                             <div className="p-6 border-b border-gray-200 flex justify-between items-center">
                                 <h3 className="text-emerald-900 font-bold">Recent Interactions</h3>

@@ -7,7 +7,7 @@
 ## 📸 Project Showcase
 
 ### Desktop View Mockup
-![Desktop Mockup]('./assets/screenshots/Home.png') 
+![Desktop Mockup]('./assets/logo.png') 
 *Replace this link with your actual screenshot or a mockup image*
 
 ### 📱 Responsive Design

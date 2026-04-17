@@ -16,14 +16,12 @@ const NavBar = () => {
 
     return (
         <div className="navbar bg-base-100 px-4 md:px-8 border-b border-gray-200">
-            {/* Logo */}
             <Link href={'/'} className="navbar-start">
                 <div className="flex items-center gap-1 cursor-pointer">
                     <img src="/assets/logo.png" alt="" />
                 </div>
             </Link>
 
-            {/* Right Side */}
             <div className="navbar-end">
 
                 {/* Desktop Menu */}

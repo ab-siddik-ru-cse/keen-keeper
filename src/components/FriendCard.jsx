@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const FriendCard = ({ friend }) => {
+
     // Logic for Status Badge Colors
     const getStatusStyles = (status) => {
         switch (status.toLowerCase()) {
@@ -15,6 +16,7 @@ const FriendCard = ({ friend }) => {
                 return 'bg-gray-100 text-gray-600';
         }
     };
+    
     return (
         <Link href={`/friendsdetails/${friend.id}`}>
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-50 flex flex-col items-center text-center hover:translate-y-[-2px] hover:shadow-md transition-all cursor-pointer h-full">
